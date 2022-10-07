@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+a {
+  display: block;
+}
+
+html {
+  background-image: url(img/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0;
+  background-color: hsl(225, 100%, 94%);
+  
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  width: 400px;
+  border-radius: 10px;
+}
+
+main .image {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.text-box {
+  text-align: center;
+  padding: 30px 35px;
+}
+
+.text-box h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+p {
+  font-size: 14px;
+}
+
+.info-text {
+  color: hsl(224, 23%, 55%);
+  padding: 15px 30px;
+}
+
+.box-music {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  margin-top: 5px;
+}
+
+.box-music a {
+  font-weight: 900;
+  font-size: 12px;
+  color: hsl(245, 75%, 52%);
+}
+
+.box-music a:hover {
+  text-decoration: none;
+  color: hsl(252, 78%, 57%);
+}
+
+.box-music-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  margin-right: 55px;
+}
+
+.box-music-info p:nth-child(2) {
+  color: hsl(224, 23%, 55%);
+}
+
+.box-music-info p:first-child {
+  font-weight: 900;
+}
+
+/* ===== first button =====*/
+
+.first-button {
+  font-size: 12px;
+  font-weight: 700;
+  background-color: hsl(245, 75%, 52%);
+  padding: 12px 0;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0px 20px 13px 0px hsl(244, 100%, 93%);
+  margin: 30px 0;
+}
+
+.first-button:hover {
+  background-color: hsl(252, 78%, 57%);
+  transition: 0.8s;
+}
+
+.second-button {
+  width: 80px;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 10px;
+}
+
+.second-button:hover {
+  color: hsl(222, 18%, 19%);
+}
+
+@media (max-width: 450px) {
+  main {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .text-box {
+    text-align: center;
+    padding: 30px 25px;
+  }
+
+  .box-music-info {
+    margin-right: 25px;
+    align-items: center;
+  }
+
+  .first-button {
+    padding: 15px 0;
+    font-size: 16px;
+  }
+
+  .second-button {
+    font-size: 16px;
+    width: 120px;
+  }
+
+  .info-text {
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
